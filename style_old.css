@@ -53,16 +53,10 @@ nav a:hover::after{width:100%}
 .section-dark .section-heading h2{color:#fff}
 .section-dark .section-heading p{color:#bfd3d7}
 .split{display:grid;grid-template-columns:.78fr 1.22fr;gap:90px}
-.split h2,.section-heading h2{
-  margin:0;
-  color:var(--blue-dark);
-  font-size:clamp(2.15rem,3.5vw,3.8rem);
-  line-height:1;
-  letter-spacing:-.05em
-}
+.split h2,.section-heading h2{margin:0;color:var(--blue-dark);font-size:clamp(2.25rem,4vw,4.1rem);line-height:1;letter-spacing:-.05em}
 .prose{max-width:720px;color:#49646b;font-size:1.08rem}
 .prose p:first-child{margin-top:0}
-.section-heading{max-width:980px;margin-bottom:58px}
+.section-heading{max-width:830px;margin-bottom:58px}
 .section-heading p:not(.section-kicker){margin-top:20px;color:var(--muted);font-size:1.05rem}
 
 .experience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
@@ -189,52 +183,14 @@ nav a:hover::after{width:100%}
 
 
 /* MAIF technical visual */
-.tech-visual {
-  min-height: 330px;
-  padding: 30px;
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  background: linear-gradient(135deg, #ffffff, #f2fbfa);
-  color: var(--text);
-  box-shadow: 0 18px 45px rgba(13, 48, 75, 0.07);
-}
-.tech-visual-title {
-  margin: 0 0 22px;
-  color: var(--turquoise-dark);
-  font-size: .78rem;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  font-weight: 900;
-}
+.tech-visual{min-height:330px;padding:30px;border:1px solid rgba(115,227,223,.28);border-radius:22px;background:linear-gradient(145deg,#102f3a,#174d78);color:white;box-shadow:0 20px 55px rgba(13,48,75,.12)}
+.tech-visual-title{margin:0 0 22px;color:#79e3df;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;font-weight:900}
 .tech-flow{display:flex;flex-wrap:wrap;gap:10px}
-.tech-flow span {
-  padding: 9px 12px;
-  border: 1px solid #bfe2e0;
-  border-radius: 999px;
-  background: #ffffff;
-  color: var(--blue-dark);
-  font-size: .84rem;
-  font-weight: 750;
-}
-.tech-quality {
-  margin-top: 28px;
-  padding: 18px;
-  border-left: 4px solid var(--turquoise);
-  background: #eaf8f7;
-}
-.tech-quality strong {
-  color: var(--turquoise-dark);
-}
-.tech-quality p {
-  margin: 5px 0 0;
-  color: var(--muted);
-}
-.confidentiality {
-  margin: 30px 0 0;
-  color: #7b9095;
-  font-size: .8rem;
-  font-style: italic;
-}
+.tech-flow span{padding:9px 12px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.06);color:#edf9f8;font-size:.84rem;font-weight:750}
+.tech-quality{margin-top:28px;padding:18px;border-left:4px solid #19bebb;background:rgba(255,255,255,.055)}
+.tech-quality strong{color:#79e3df}
+.tech-quality p{margin:5px 0 0;color:#d3e7e9}
+.confidentiality{margin:30px 0 0;color:#a9c7cc;font-size:.8rem;font-style:italic}
 
 
 /* Shared MAIF environment */
@@ -379,52 +335,4 @@ nav a:hover::after{width:100%}
   margin: 6px 0 0;
   color: var(--muted);
   font-size: .9rem;
-}
-
-
-/* Responsive mobile final */
-
-@media (max-width: 740px) {
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-
-  .hero-actions .button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .experience-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .experience-card {
-    width: 100%;
-    margin: 0;
-    padding: 24px 20px;
-    border-radius: 16px;
-    box-shadow: none;
-  }
-
-  .experience-head {
-    gap: 12px;
-  }
-
-  .experience-head span {
-    white-space: normal;
-    text-align: right;
-  }
-
-  .maif-project-summary > div,
-  .independent-summary > div {
-    padding: 13px 14px;
-  }
-
-  .shared-environment,
-  .independent-flow {
-    padding: 16px;
-  }
 }
